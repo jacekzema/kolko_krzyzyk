@@ -75,34 +75,10 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_hello_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/hello.js */ \"./src/js/hello.js\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_style_scss__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\r\n/*console.log(\"dziala\");\r\nalert(\"ale jestem zajeb  ddddisty\");\r\nhello('Jacek');\r\n*/\r\n\r\n//domyśle parametry funckji ES6\r\n//\r\n// function showData(name='Jacek',language='JS') {\r\n//     console.log(name + ' codes in: ' + language);\r\n// }\r\n// showData(\"Adam\");\r\n\r\n// Funkcje skrzałkowe\r\n\r\nfunction abc (name=\"Nizio\",language=\"Jsie\")\r\n{\r\n    console.log(name +\" kodzi w: \"+ language);\r\n}\r\n\r\nconst fun = (name = \"Bazi\", language=\"C++\") => console.log(name+\" kodzi w: \"+language);\r\n\r\nabc(\"moja\",\"stara\");\r\nfun(\"atutaj\",\"juz nie\");\r\n\r\nconst numbers = [5,10,15,199];\r\n\r\n\r\nconst NewArr = numbers.map(number =>  number *2);\r\n\r\nconsole.log(NewArr);\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/js/hello.js":
-/*!*************************!*\
-  !*** ./src/js/hello.js ***!
-  \*************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (name) {\r\n    console.log(\"hello \" + name);\r\n});\n\n//# sourceURL=webpack:///./src/js/hello.js?");
-
-/***/ }),
-
-/***/ "./src/scss/style.scss":
-/*!*****************************!*\
-  !*** ./src/scss/style.scss ***!
-  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/scss/style.scss?");
+eval("//import hello from './js/hello.js';\r\n//import './scss/style.scss';\r\n\r\n// console.log(\"dziala\");\r\n// alert(\"ale jestem zajeb  ddddisty\");\r\n// hello('Jacek');\r\n\r\n\r\n//domyśle parametry funckji ES6\r\n//\r\n// function showData(name='Jacek',language='JS') {\r\n//     console.log(name + ' codes in: ' + language);\r\n// }\r\n// showData(\"Adam\");\r\n\r\n// Funkcje skrzałkowe\r\n\r\n// function abc (name=\"Nizio\",language=\"Jsie\")\r\n// {\r\n//     console.log(name +\" kodzi w: \"+ language);\r\n// }\r\n//\r\n// const fun = (name = \"Bazi\", language=\"C++\") => console.log(name+\" kodzi w: \"+language);\r\n//\r\n// abc(\"moja\",\"stara\");\r\n// fun(\"atutaj\",\"juz nie\");\r\n//\r\n// const numbers = [5,10,15,199];\r\n//\r\n//\r\n// const NewArr = numbers.map(number =>  number *2);\r\n//\r\n// console.log(NewArr);\r\n\r\nwindow.onload = function () {\r\n\r\n    window.addEventListener('resize',dynamiczna_zmiana_okna);\r\n    const pola = document.getElementsByClassName('pole');\r\n    var ilosc_pol = pola.length;\r\n\r\n    var dodajznak = function(){\r\n        this.innerHTML = 'X';\r\n    };\r\n\r\n\r\n    for (var j=0; j <=pola.length-1;j++ )\r\n    {\r\n        pola[j].addEventListener('click',dodajznak, false);\r\n    };\r\n\r\n\r\n    \r\n    function dynamiczna_zmiana_okna () {\r\n        var pola = document.getElementsByClassName('pole');\r\n        var szerokosc = document.getElementById('plansza').clientWidth;\r\n        document.getElementById('plansza').style.height = szerokosc+\"px\";\r\n\r\n        var szerokosc_pola = pola[0].clientHeight;\r\n\r\n        for (let i = 0; i <= (ilosc_pol-1) ; i++ )\r\n        {\r\n            pola[i].style.fontSize = szerokosc_pola *0.75 +\"px\";\r\n            pola[i].style.lineHeight = szerokosc_pola+\"px\";\r\n\r\n        };\r\n};\r\n    dynamiczna_zmiana_okna();\r\n};\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

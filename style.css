@@ -1,4 +1,31 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   background: #999;
   color: #333;
   text-align: center; }
+
+#plansza {
+  max-width: 620px;
+  height: 620px;
+  background-color: maroon;
+  margin: 0 auto; }
+  #plansza .pole {
+    font-family: 'Pangolin', cursive;
+    font-size: 150px;
+    width: 33%;
+    height: 33%;
+    background: #fff0d7;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    color: black;
+    transition: all 0.1s;
+    margin: 0.167%; }
+  #plansza .pole:hover {
+    background-color: #fff5d6;
+    color: #1a1a1a;
+    cursor: pointer; }
