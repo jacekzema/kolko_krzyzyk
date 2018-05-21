@@ -7,12 +7,26 @@ body {
   color: #333;
   text-align: center; }
 
+#punkty {
+  max-width: 620px;
+  width: 100%;
+  background-color: yellow;
+  margin: 0 auto; }
+  @media (min-width: 320px) and (max-width: 768px) {
+    #punkty {
+      max-width: 100%;
+      width: 100%; } }
+
 #plansza {
   max-width: 620px;
   width: 100%;
   height: 620px;
   background-color: #57060d;
   margin: 0 auto; }
+  @media (min-width: 320px) and (max-width: 768px) {
+    #plansza {
+      max-width: 100%;
+      width: 100%; } }
   #plansza .pole {
     font-family: 'Pangolin', cursive;
     font-size: 150px;
@@ -31,7 +45,24 @@ body {
     color: #1a1a1a;
     cursor: pointer; }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  #plansza {
-    max-width: 100%;
-    width: 100%; } }
+#wybor_trybu {
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  height: 50%;
+  width: 50%;
+  background-color: lawngreen;
+  opacity: 0.8; }
+  #wybor_trybu p {
+    padding: 5px;
+    color: aqua; }
+
+#jeszcze_raz {
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  height: 50%;
+  width: 50%;
+  background-color: lawngreen;
+  display: none;
+  opacity: 0.8; }
